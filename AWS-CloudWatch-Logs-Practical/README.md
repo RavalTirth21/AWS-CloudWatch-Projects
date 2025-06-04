@@ -1,6 +1,6 @@
 # 📊 AWS CloudWatch Logs Practical – Custom Log Group Monitoring
 
-This project demonstrates how to create a CloudWatch Logs group, push custom logs to it from an EC2 instance, and verify the logs in the AWS Console.
+This project demonstrates how to create a CloudWatch Logs group, push custom logs from an EC2 instance, and verify the logs in the AWS Console.
 
 ---
 
