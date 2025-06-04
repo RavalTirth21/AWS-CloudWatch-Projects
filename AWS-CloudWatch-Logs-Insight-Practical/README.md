@@ -54,7 +54,7 @@ This project demonstrates how to use **CloudWatch Logs Insights** to analyze log
 
 ### 📷 Output
 
-![Query 2](02-Query-2-Output.png)
+![Query 2](03-Query-3-Output.png)
 
 ---
 
@@ -70,7 +70,7 @@ This project demonstrates how to use **CloudWatch Logs Insights** to analyze log
 
 ### 📷 Output
 
-![Query 3](03-Query-3-Output.png)
+![Query 3](02-Query-2-Output.png)
 
 ---
 
