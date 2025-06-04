@@ -34,44 +34,11 @@ Created a CloudWatch Logs group named `mylog.log`.
 
 SSH into the EC2 instance and created a custom log generator script to simulate real-time application logs in JSON format. Logs are written to `/tmp/mylog.log`. Previously Created in CloudWatch Agent and given path.
 
-#!/bin/bash
-
-LOG_FILE="/tmp/mylog.log"
-APP_NAME="InventoryService"
-HOSTNAME=$(hostname)
-
-generate_log_entry() {
-  TIMESTAMP=$(date '+%Y-%m-%dT%H:%M:%S')
-  LEVELS=("INFO" "WARN" "ERROR")
-  RANDOM_INDEX=$((RANDOM % ${#LEVELS[@]}))
-  LOG_LEVEL=${LEVELS[$RANDOM_INDEX]}
-
-  case $LOG_LEVEL in
-    "INFO")
-      MESSAGE="Inventory check successful"
-      ;;
-    "WARN")
-      MESSAGE="Inventory threshold warning for product ID $((RANDOM % 1000))"
-      ;;
-    "ERROR")
-      MESSAGE="Inventory DB connection failed"
-      ;;
-  esac
-
-  #### Output in JSON format
-  echo "{\"timestamp\":\"$TIMESTAMP\",\"level\":\"$LOG_LEVEL\",\"service\":\"$APP_NAME\",\"host\":\"$HOSTNAME\",\"message\":\"$MESSAGE\"}" >> "$LOG_FILE"
-}
-
-#### Loop with random log generation
-while true
-do
-  generate_log_entry
-  sleep $((RANDOM % 5 + 1))  # Sleep 1 to 5 seconds
-done
+![Script Created for logs](02-Script-for-log.png)
 
 📄 The above script continuously generates logs in JSON format, mimicking a real-world application and writes them to /tmp/mylog.log.
 
-![Script Created for logs](02-Logs-Generated.png)
+![Output for the logs](02-Logs-Generated.png)
 
 ---
 
