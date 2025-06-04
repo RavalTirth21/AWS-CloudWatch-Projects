@@ -30,7 +30,7 @@ Created a CloudWatch Logs group named `mylog.log`.
 
 ---
 
-### 📸 Step 2: Generated Logs on EC2 Instance
+### 📸 Step 2: Creating Script and Generated Logs on EC2 Instance
 
 SSH into the EC2 instance and created a custom log generator script to simulate real-time application logs in JSON format. Logs are written to `/tmp/mylog.log`. Previously Created in CloudWatch Agent and given path.
 
