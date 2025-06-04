@@ -25,7 +25,7 @@ This practical demonstrates how to configure a **composite alarm** in Amazon Clo
 ### ✅ Step 1: Created Another EC2 Instance and Alarm
 A new Amazon EC2 instance and Alarm was created for testing.
 
-![01 - Created Instance & Alarm](images/01-Created-Another-Alarm.png)
+![01 - Created Instance & Alarm](01-Created-Another-Alarm.png)
 
 ---
 
@@ -35,35 +35,35 @@ The `stress` command was run to artificially increase CPU utilization.
 - sudo yum install stress -y
 - stress --cpu 2 --timeout 120
 
-![02 - Stress Test on both the Instance](images/02-Stress-In-PreviousCreated-AnotherCreated-Alarm.png)
+![02 - Stress Test on both the Instance](02-Stress-In-PreviousCreated-AnotherCreated-Alarm.png)
 
 ---
 
 ### 📊 Step 3: Created Composite Alarm
 A composite alarm was created in CloudWatch using two individual CPU alarms.
 
-![03 - Composite Alarm Created](images/03-Created-Composite-Alarm.png)
+![03 - Composite Alarm Created](03-Created-Composite-Alarm.png)
 
 ---
 
 ### 🔔 Step 4: 1 Out of 2 Alarms Trigger
 One of the individual alarms triggered due to CPU threshold breach.
 
-![04 - Any 1 Alarm Triggers](images/04-1outof2-Alarm-Triggers.png)
+![04 - Any 1 Alarm Triggers](04-1outof2-Alarm-Triggers.png)
 
 ---
 
 ### 🧠 Step 5: Composite Alarm Triggers
 The composite alarm logic was satisfied (1 of 2 alarms in In ALARM state), so the composite alarm triggered.
 
-![05 - Composite Alarm Triggers ](images/05-Composite-Alarm-Triggers.png)
+![05 - Composite Alarm Triggers ](05-Composite-Alarm-Triggers.png)
 
 ---
 
 ### 📧 Step 6: Email Notification for Composite Alarm (via SNS)
 The Email Notification was received via SNS when the Composite Alarm goes "In Alarm" State.
 
-![06 - Email Notification for Composite Alarm](images/06-Email-Notification-Composite-Alarm.png)
+![06 - Email Notification for Composite Alarm](06-Email-Notification-Composite-Alarm.png)
 
 ---
 
