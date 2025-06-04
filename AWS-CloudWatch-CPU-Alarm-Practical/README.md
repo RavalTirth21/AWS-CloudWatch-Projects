@@ -61,42 +61,42 @@ Logged into the EC2 instance and installed `stress` tool to simulate high CPU us
 
 ---
 
-🚨 6. Alarm Entered “In Alarm” State
+### 🚨 6. Alarm Entered “In Alarm” State
 Once the CPU crossed the threshold, the alarm changed to In Alarm state.
 
 ![Step 6 - In Alarm](06-Increase-CPU-Utilization-In-Alarm.png)
 
 ---
 
-🟥 7. Alarm Trigger Notification
+### 🟥 7. Alarm Trigger Notification
 Alarm triggered and notification was sent to SNS topic subscribers.
 
 ![Step 7 - Alarm Trigger Notification](07-In-Alarm-Triggers.png)
 
 ---
 
-📊 8. Graph on CloudWatch Dashboard
+### 📊 8. Graph on CloudWatch Dashboard
 The graph on CloudWatch showed a spike in CPU usage during the stress period.
 
 ![Step 8 - CloudWatch Dashboard Graph](08-CloudWatch-Dashboard-Graph-Increase.png)
 
 ---
 
-📧 9. Email Notification via SNS
+### 📧 9. Email Notification via SNS
 Received an email from SNS confirming the alarm trigger.
 
 ![Step 9 - Notification on Email via SNS](09-Message-In-Email-SNS.png)
 
 ---
 
-✅ 10. Stress Over and Alarm Back to OK
+### ✅ 10. Stress Over and Alarm Back to OK
 After stress ended, the CPU usage dropped and the alarm returned to OK state.
 
 ![Step 10 - Alarm in OK state after Stress is Over](10-Stress-Over-Alarm-OK.png)
 
 ---
 
-✅ Final Output
+### ✅ Final Output
 - Successfully monitored EC2 CPU usage
 - Alarm triggered on high usage
 - Email notification received via SNS
@@ -104,7 +104,7 @@ After stress ended, the CPU usage dropped and the alarm returned to OK state.
 
 ---
 
-📂 Folder Structure
+### 📂 Folder Structure
 
 AWS-CloudWatch-CPU-Alarm-Practical/
     ├── 01-Created-Instance.png
