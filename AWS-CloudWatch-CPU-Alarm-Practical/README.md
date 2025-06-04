@@ -54,8 +54,8 @@ Created an SNS topic and subscribed with an email address to receive notificatio
 ### 🔥 5. Performed CPU Stress Test  
 Logged into the EC2 instance and installed `stress` tool to simulate high CPU usage.
 
-sudo yum install stress -y
-stress --cpu 2 --timeout 120
+- sudo yum install stress -y
+- stress --cpu 2 --timeout 120
 
 ![Step 5 - CPU Stress Test](05-Stress-In-Created-Instance.png)
 
@@ -97,10 +97,10 @@ After stress ended, the CPU usage dropped and the alarm returned to OK state.
 ---
 
 ✅ Final Output
--Successfully monitored EC2 CPU usage
--Alarm triggered on high usage
--Email notification received via SNS
--Verified via CloudWatch Dashboard and email inbox
+- Successfully monitored EC2 CPU usage
+- Alarm triggered on high usage
+- Email notification received via SNS
+- Verified via CloudWatch Dashboard and email inbox
 
 ---
 
