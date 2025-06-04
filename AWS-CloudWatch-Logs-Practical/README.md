@@ -61,6 +61,7 @@ The generated logs appeared in the created CloudWatch Log Group.
 AWS-CloudWatch-Logs-Practical/
 
     ├── 01-Log-Group-Created.png
+    ├── 02-Script-for-log.png
     ├── 02-Logs-Generated.png
     ├── 03-Generated-Logs-Seen-In-Log-Group.png
     └── README.md
