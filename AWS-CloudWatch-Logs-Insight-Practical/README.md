@@ -95,8 +95,8 @@ This project demonstrates how to use **CloudWatch Logs Insights** to analyze log
 
 AWS-CloudWatch-Logs-Insight-Practical/
 
-├── 01-Query-1-Output.png
-├── 02-Query-2-Output.png
-├── 03-Query-3-Output.png
-├── 04-Query-4-Output.png
-└── README.md
+    ├── 01-Query-1-Output.png
+    ├── 02-Query-2-Output.png
+    ├── 03-Query-3-Output.png
+    ├── 04-Query-4-Output.png
+    └── README.md
