@@ -1,6 +1,6 @@
 # 📊 AWS CloudWatch EC2 CPU Utilization Alarm with SNS Email Notification
 
-This project demonstrates how to monitor an EC2 instance's CPU utilization using AWS CloudWatch, configure alarms, and notify via SNS email when usage exceeds a threshold.
+### This project demonstrates how to monitor an EC2 instance's CPU utilization using AWS CloudWatch, configure alarms, and notify via SNS email when usage exceeds a threshold.
 ---
 
 ## 🧾 Project Overview
@@ -13,7 +13,7 @@ The goal of this practical is to:
 
 ---
 
-📎Related AWS Services
+##📎Related AWS Services
 - Amazon EC2
 - Amazon CloudWatch
 - Amazon SNS
