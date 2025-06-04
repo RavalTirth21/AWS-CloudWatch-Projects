@@ -67,14 +67,14 @@ The Email Notification was received via SNS when the Composite Alarm goes "In Al
 
 ---
 
-📤 Final Output
+### 📤 Final Output
 - Two CloudWatch alarms were created and tested.
 - Composite alarm triggered when any one of the alarms entered ALARM state.
 - Behavior was verified using a simulated CPU spike.
 
 ---
 
-📂 Folder Structure
+### 📂 Folder Structure
 
 AWS-CloudWatch-Composite-Alarm/
 
